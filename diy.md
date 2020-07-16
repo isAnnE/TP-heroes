@@ -11,8 +11,8 @@ On votera vendredi à
 
 - features minimum
   - lister tous les heroes - DONE
-  - voir le détails d'un hero
-  - supprimer un hero
+  - voir le détails d'un hero - Done
+  - supprimer un hero - 
   - créer un nouveau hero
   - filter les heroes par nom
   - classez les heroes par id ascendant/descendant
