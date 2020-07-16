@@ -1,155 +1,6 @@
 {
   "heroes": [
     {
-      "id": 7,
-      "name": "Adam Monroe",
-      "powerstats": {
-        "intelligence": "63",
-        "strength": "10",
-        "speed": "12",
-        "durability": "100",
-        "power": "100",
-        "combat": "64"
-      },
-      "biography": {
-        "full-name": "",
-        "alter-egos": "No alter egos found.",
-        "aliases": [
-          "Takezo Kensei",
-          "Richard Sanders"
-        ],
-        "place-of-birth": "-",
-        "first-appearance": "Heroes S02E01 - Four Months Later...",
-        "publisher": "NBC - Heroes",
-        "alignment": "good"
-      },
-      "appearance": {
-        "gender": "Male",
-        "race": "null",
-        "height": [
-          "-",
-          "0 cm"
-        ],
-        "weight": [
-          "- lb",
-          "0 kg"
-        ],
-        "eye-color": "Blue",
-        "hair-color": "Blond"
-      },
-      "work": {
-        "occupation": "former samurai swordsman, former British mercenary commander, former soldier in the Confederate Army",
-        "base": "U.S.; formerly Diedenshausen, Germany; Milan, Italy; Paris, France; Japan; England; Atlanta, GA; Montreal, Canada"
-      },
-      "connections": {
-        "group-affiliation": "-",
-        "relatives": "-"
-      },
-      "image": {
-        "url": "https://www.superherodb.com/pictures2/portraits/10/100/1026.jpg"
-      }
-    },
-    {
-      "id": 8,
-      "name": "Adam Strange",
-      "powerstats": {
-        "intelligence": "69",
-        "strength": "10",
-        "speed": "33",
-        "durability": "40",
-        "power": "37",
-        "combat": "50"
-      },
-      "biography": {
-        "full-name": "Adam Strange",
-        "alter-egos": "No alter egos found.",
-        "aliases": [
-          "Warrior of Two Worlds",
-          "Savior of Rann"
-        ],
-        "place-of-birth": "Chicago, Illinois",
-        "first-appearance": "Outsiders #6 (April, 1986)",
-        "publisher": "DC Comics",
-        "alignment": "good"
-      },
-      "appearance": {
-        "gender": "Male",
-        "race": "Human",
-        "height": [
-          "6'1",
-          "185 cm"
-        ],
-        "weight": [
-          "195 lb",
-          "88 kg"
-        ],
-        "eye-color": "Blue",
-        "hair-color": "Blond"
-      },
-      "work": {
-        "occupation": "Adventurer, archaelogist, ambassador",
-        "base": "Rann, Alpha Centauri System"
-      },
-      "connections": {
-        "group-affiliation": "Omega Men, L.E.G.I.O.N., R.E.B.E.L.S., formerly Seven Soldiers of Victory",
-        "relatives": "Alanna Strange (wife); Aleea Strange (daughter); Sardath (father-in-law); Janey Strange (sister); Todd Strange (brother, deceased); Bantteir (mother-in-law); Adam Strange II (descendent)"
-      },
-      "image": {
-        "url": "https://www.superherodb.com/pictures2/portraits/10/100/626.jpg"
-      }
-    },
-    {
-      "id": 10,
-      "name": "Agent Bob",
-      "powerstats": {
-        "intelligence": "10",
-        "strength": "8",
-        "speed": "13",
-        "durability": "5",
-        "power": "5",
-        "combat": "20"
-      },
-      "biography": {
-        "full-name": "Bob",
-        "alter-egos": "No alter egos found.",
-        "aliases": [
-          "Bob",
-          "agent of Hydra",
-          "Bob",
-          "agent of A.I.M"
-        ],
-        "place-of-birth": "-",
-        "first-appearance": "Cable & Deadpool #38 (May, 2007)",
-        "publisher": "Marvel Comics",
-        "alignment": "good"
-      },
-      "appearance": {
-        "gender": "Male",
-        "race": "Human",
-        "height": [
-          "5'10",
-          "178 cm"
-        ],
-        "weight": [
-          "181 lb",
-          "81 kg"
-        ],
-        "eye-color": "Brown",
-        "hair-color": "Brown"
-      },
-      "work": {
-        "occupation": "Mercenary, janitor; former pirate, terrorist",
-        "base": "Mobile; formerly Manhattan, Hellcarrier"
-      },
-      "connections": {
-        "group-affiliation": "A.I.M., Deadpool; formerly Agency X, Hydra",
-        "relatives": "Allison (ex-wife); Terry and Howie (sons)"
-      },
-      "image": {
-        "url": "https://www.superherodb.com/pictures2/portraits/10/100/10255.jpg"
-      }
-    },
-    {
       "id": 11,
       "name": "Agent Zero",
       "powerstats": {
@@ -490,105 +341,6 @@
       }
     },
     {
-      "id": 20,
-      "name": "Amazo",
-      "powerstats": {
-        "intelligence": "63",
-        "strength": "100",
-        "speed": "83",
-        "durability": "100",
-        "power": "100",
-        "combat": "100"
-      },
-      "biography": {
-        "full-name": "",
-        "alter-egos": "No alter egos found.",
-        "aliases": [
-          "Professor Ivos Amazing Android",
-          "Timazo",
-          "Humazo",
-          "Hourmazo"
-        ],
-        "place-of-birth": "-",
-        "first-appearance": "Brave and the Bold #30 (July, 1960)",
-        "publisher": "DC Comics",
-        "alignment": "bad"
-      },
-      "appearance": {
-        "gender": "Male",
-        "race": "Android",
-        "height": [
-          "8'5",
-          "257 cm"
-        ],
-        "weight": [
-          "385 lb",
-          "173 kg"
-        ],
-        "eye-color": "Red",
-        "hair-color": "-"
-      },
-      "work": {
-        "occupation": "-",
-        "base": "-"
-      },
-      "connections": {
-        "group-affiliation": "Formerly the Secret Society of Super Villains",
-        "relatives": "Professor Ivo (creator), Kid Amazo (cyborg offspring)"
-      },
-      "image": {
-        "url": "https://www.superherodb.com/pictures2/portraits/10/100/1390.jpg"
-      }
-    },
-    {
-      "id": 21,
-      "name": "Ammo",
-      "powerstats": {
-        "intelligence": "null",
-        "strength": "null",
-        "speed": "null",
-        "durability": "null",
-        "power": "null",
-        "combat": "null"
-      },
-      "biography": {
-        "full-name": "",
-        "alter-egos": "No alter egos found.",
-        "aliases": [
-          "-"
-        ],
-        "place-of-birth": "-",
-        "first-appearance": "Daredevil #252 (March, 1988)",
-        "publisher": "Marvel Comics",
-        "alignment": "bad"
-      },
-      "appearance": {
-        "gender": "Male",
-        "race": "Human",
-        "height": [
-          "6'2",
-          "188 cm"
-        ],
-        "weight": [
-          "225 lb",
-          "101 kg"
-        ],
-        "eye-color": "Brown",
-        "hair-color": "Black"
-      },
-      "work": {
-        "occupation": "Gang leader , criminal , former soldier",
-        "base": "New York City"
-      },
-      "connections": {
-        "group-affiliation": "former leader of the Wildboys",
-        "relatives": "-"
-      },
-      "image": {
-        "url": "https://www.superherodb.com/pictures2/portraits/10/100/184.jpg"
-      }
-    },
-    {
       "id": 22,
       "name": "Ando Masahashi",
       "powerstats": {
@@ -833,102 +585,6 @@
       },
       "image": {
         "url": "https://www.superherodb.com/pictures2/portraits/10/100/1406.jpg"
-      }
-    },
-    {
-      "id": 27,
-      "name": "Angela",
-      "powerstats": {
-        "intelligence": "null",
-        "strength": "97",
-        "speed": "null",
-        "durability": "null",
-        "power": "null",
-        "combat": "null"
-      },
-      "biography": {
-        "full-name": "",
-        "alter-egos": "No alter egos found.",
-        "aliases": [
-          "-"
-        ],
-        "place-of-birth": "-",
-        "first-appearance": "-",
-        "publisher": "Image Comics",
-        "alignment": "bad"
-      },
-      "appearance": {
-        "gender": "Female",
-        "race": "null",
-        "height": [
-          "-",
-          "0 cm"
-        ],
-        "weight": [
-          "- lb",
-          "0 kg"
-        ],
-        "eye-color": "-",
-        "hair-color": "-"
-      },
-      "work": {
-        "occupation": "-",
-        "base": "-"
-      },
-      "connections": {
-        "group-affiliation": "-",
-        "relatives": "-"
-      },
-      "image": {
-        "url": "https://www.superherodb.com/pictures2/portraits/10/100/1070.jpg"
-      }
-    },
-    {
-      "id": 28,
-      "name": "Animal Man",
-      "powerstats": {
-        "intelligence": "56",
-        "strength": "48",
-        "speed": "47",
-        "durability": "85",
-        "power": "73",
-        "combat": "80"
-      },
-      "biography": {
-        "full-name": "Bernhard Baker",
-        "alter-egos": "No alter egos found.",
-        "aliases": [
-          "The Human Zoo; A-Man; The Man with Animal Powers"
-        ],
-        "place-of-birth": "-",
-        "first-appearance": "Strange Adventures #180 (September, 1965)",
-        "publisher": "DC Comics",
-        "alignment": "good"
-      },
-      "appearance": {
-        "gender": "Male",
-        "race": "Human",
-        "height": [
-          "6'0",
-          "183 cm"
-        ],
-        "weight": [
-          "185 lb",
-          "83 kg"
-        ],
-        "eye-color": "Blue",
-        "hair-color": "Blond"
-      },
-      "work": {
-        "occupation": "-",
-        "base": "San Diego, California"
-      },
-      "connections": {
-        "group-affiliation": "Formerly Animal Masters, Forgotten Heroes, Justice League of America, Justice League Europe",
-        "relatives": "Ellen Frazier (wife), Cliff Baker (son), Maxine Baker (daughter), unnamed second daughter, Frank Baker, Jr. (father), Phyllis Baker (mother), unnamed sister, Frank, Sr (grandfather), Teddy (great grandfather), Sherman (great-great grandfather), Jack (great-great-great grandfather), Mary Frazier (mother-in-law), Dudley (uncle-in-law), Annie Cassidy (mother of second daughter), Lucy Cassidy (half-sister of second daughter)"
-      },
-      "image": {
-        "url": "https://www.superherodb.com/pictures2/portraits/10/100/632.jpg"
       }
     },
     {
@@ -1178,59 +834,6 @@
       },
       "image": {
         "url": "https://www.superherodb.com/pictures2/portraits/10/100/1071.jpg"
-      }
-    },
-    {
-      "id": 34,
-      "name": "Anti-Venom",
-      "powerstats": {
-        "intelligence": "75",
-        "strength": "60",
-        "speed": "65",
-        "durability": "90",
-        "power": "96",
-        "combat": "84"
-      },
-      "biography": {
-        "full-name": "Eddie Brock",
-        "alter-egos": "Toxin, Venom",
-        "aliases": [
-          "Eddie",
-          "Edwin Brock",
-          "Venom",
-          "Lethal Protector",
-          "White Venom",
-          "998th"
-        ],
-        "place-of-birth": "San Francisco, California",
-        "first-appearance": "Amazing Spider-Man #569 (as Anti-Venom)",
-        "publisher": "Toxin",
-        "alignment": "-"
-      },
-      "appearance": {
-        "gender": "Male",
-        "race": "Symbiote",
-        "height": [
-          "7'6",
-          "229 cm"
-        ],
-        "weight": [
-          "795 lb",
-          "358 kg"
-        ],
-        "eye-color": "Blue",
-        "hair-color": "Blond"
-      },
-      "work": {
-        "occupation": "Vigilante; former journalist for the Daily Globe",
-        "base": "New York, New York"
-      },
-      "connections": {
-        "group-affiliation": "-",
-        "relatives": "Carl Brock (father, estranged), Janine Brock (mother, deceased), Mary Brock (sister), Ann Weying (ex-wife, deceased), Symbiotes' relatives: Toxin Symbiote (current symbiote, former grandson), Venom Symbiote (former symbiote, grandfather, former brother), Agony, Phage, Riot, Lasher (uncles, former sons), Scorn (sister, former niece), Carnage (father, former son), Scream (aunt, former daughter, deceased), Hybrid (uncle, former son, deceased)"
-      },
-      "image": {
-        "url": "https://www.superherodb.com/pictures2/portraits/10/100/1485.jpg"
       }
     },
     {
@@ -35761,6 +35364,66 @@
         "combat": "0"
       },
       "id": 736
+    },
+    {
+      "name": "titi",
+      "aliases": "toto",
+      "weight": "50",
+      "height": "6",
+      "publisher": "marvel",
+      "race": "humain",
+      "gender": "Male",
+      "id": 739
+    },
+    {
+      "name": "titi",
+      "aliases": "toto",
+      "weight": "50",
+      "height": "6",
+      "publisher": "marvel",
+      "race": "humain",
+      "gender": "Male",
+      "id": 740
+    },
+    {
+      "name": "titi",
+      "aliases": "titi",
+      "weight": "50",
+      "height": "60",
+      "publisher": "marvel",
+      "race": "humain",
+      "gender": "Male",
+      "id": 741
+    },
+    {
+      "name": "titi",
+      "aliases": "titi",
+      "weight": "50",
+      "height": "60",
+      "publisher": "marvel",
+      "race": "humain",
+      "gender": "Male",
+      "id": 742
+    },
+    {
+      "name": "zozo",
+      "aliases": "zaza",
+      "weight": "50",
+      "height": "60",
+      "publisher": "marvel",
+      "race": "humain",
+      "gender": "Female",
+      "id": 743
+    },
+    {
+      "name": "zozo",
+      "aliases": "zaza",
+      "weight": "50",
+      "height": "60",
+      "publisher": "marvel",
+      "race": "humain",
+      "gender": "Female",
+      "id": 744
     }
   ]
 }

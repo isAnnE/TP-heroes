@@ -1,14 +1,44 @@
 const URL = "http://localhost:8000/heroes";
-
+const formPostHero = document.getElementById("form-post-hero");
 
 // show all superheroes
 
 // API function
 
+async function postNewHero() {
+    const name = document.getElementById("name").value;
+    const aliases = document.getElementById("aliases").value;
+    const weight = document.getElementById("weight").value;
+    const height = document.getElementById("height").value;
+    const publisher = document.getElementById("publisher").value;
+    const race = document.getElementById("race").value;
+    const gender = formPostHero.querySelector("input:checked").value;
+
+    try {
+        await axios.post(URL, {
+            name,
+            aliases,
+            gender,
+            weight,
+            height,
+            race,
+            publisher,
+
+        });
+
+        getAllHeroes();
+
+    } catch (err) {
+        console.error(err);
+    }
+
+}
+
+
 
 function getAllHeroes() {
     axios
-        .get(URL + "?_sort=id&_order=asc")
+        .get(URL + "?_sort=id&_order=desc")
         .then((apiRes) => {
             const heroes = apiRes.data;
             displayAllHeroes(heroes);
@@ -27,22 +57,22 @@ function getOneHero(id) {
 }
 
 async function deleteOneHero(id) {
-    // console.log(id);
+    console.log(id);
     try {
-      await axios.delete(`${URL}/${id}`);
-      removeHero(id);
+        await axios.delete(`${URL}/${id}`);
+        removeHero(id)
     } catch (err) {
-      console.error(err);
+        console.error(err)
     }
-  }
-
+}
 
 //DOM FUNCTIONS
 
-function removeHero(idHero){
+function removeHero(idHero) {
     const suppHero = document.querySelector(`[data-user-id="${idHero}"]`);
     suppHero.remove();
 }
+
 
 function displayOneHero(hero) {
     const section = document.getElementById("modal-container");
@@ -50,13 +80,13 @@ function displayOneHero(hero) {
     const div = document.createElement("div");
     div.classList.add("modal")
     div.innerHTML = `<h2>${hero.name}</h2>
-   <img src="${hero.image.url}" alt ="image hero">
-   <ul><li class="details">${hero.biography.aliases}</li>
-        <li class="details">${hero.appearance.gender}</li>
-         <li class="details">${hero.appearance.weight}</li>
-         <li class="details">${hero.appearance.height}</li>
-        <li class="details">${hero.appearance.race}</li>
-         <li class="details">${hero.biography.publisher}</li>
+    <img src="${hero.image && hero.image.url || 'https://www.stageusa.fr/wp-content/uploads/2017/11/super-h%C3%A9ro-am%C3%A9ricain.jpg'}" alt ="image hero">
+   <ul><li class="details">${hero.biography && hero.biography.aliases || hero.aliases}</li>
+        <li class="details">${hero.appearance && hero.appearance.gender || hero.gender}</li>
+         <li class="details">${hero.appearance && hero.appearance.weight || hero.weight}</li>
+         <li class="details">${hero.appearance && hero.appearance.height || hero.height}</li>
+        <li class="details">${hero.appearance && hero.appearance.race || hero.race}</li>
+         <li class="details">${hero.biography && hero.biography.publisher || hero.publisher}</li>
    </ul> `
     section.appendChild(div);
 
@@ -83,12 +113,15 @@ function displayAllHeroes(list) {
             getOneHero(hero.id);
         };
 
-        btnRemove.onclick = () =>{
+        btnRemove.onclick = () => {
             deleteOneHero(hero.id)
         };
         ul.appendChild(li);
-    });
+    })
 
 }
 
 getAllHeroes();
+
+
+formPostHero.querySelector(".btn").onclick = postNewHero;

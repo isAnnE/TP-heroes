@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,35 @@
     <link rel="stylesheet" href="/public/css/index.css">
 
 </head>
-<body>
 
-    <h1 class="title">Superhero library</h1>
+<body>
+    <section id="modal-container">
+
+    </section>
+    <header>
+        <h1 class="title">Superhero library</h1>
+        <hr>
+        <div id="form-post-hero" class="form">
+            <h2 class="title">Post new hero</h2>
+            <input type="text" id="name" class="input" placeholder="name">
+            <input type="text" id="aliases" class="input" placeholder="aliases">
+            <input type="number" id="weight" class="input" placeholder="weight">
+            <input type="number" id="height" class="input" placeholder="height">
+            <input type="text" id="race" class="input" placeholder="race">
+            <input type="text" id="publisher" class="input" placeholder="publisher">
+            <label for="female" class="label">female</label>
+            <input id="female" type="radio" name="gender" value="Female" checked>
+            <label for="male" class="label">male</label>
+            <input id="male" type="radio" name="gender" value="Male">
+            <button class="btn">ok</button>
+        </div>
+    </header>
+
     <main>
-    <ul id="listAllHeroes">
-    </ul>   
-</main> 
-<section id="modal-container">
-    
-</section>
+        <ul id="listAllHeroes">
+        </ul>
+    </main>
+  
 </body>
+
 </html>

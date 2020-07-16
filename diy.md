@@ -12,10 +12,10 @@ On votera vendredi à
 - features minimum
   - lister tous les heroes - DONE
   - voir le détails d'un hero - Done
-  - supprimer un hero - 
-  - créer un nouveau hero
-  - filter les heroes par nom
-  - classez les heroes par id ascendant/descendant
+  - supprimer un hero - semi-done
+  - créer un nouveau hero - done
+  - filter les heroes par nom - 
+  - classez les heroes par id ascendant/descendant - faire filtre?
  
 - Bonus:
   - ajouter d'autres filtres pour les héroes
