@@ -14,8 +14,8 @@ On votera vendredi à
   - voir le détails d'un hero - Done
   - supprimer un hero - semi-done
   - créer un nouveau hero - done
-  - filter les heroes par nom - 
-  - classez les heroes par id ascendant/descendant - faire filtre?
+  - filter les heroes par nom - done
+  - classez les heroes par id ascendant/descendant - faire filtre? - done A confirmer
  
 - Bonus:
   - ajouter d'autres filtres pour les héroes

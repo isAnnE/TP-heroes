@@ -1,5 +1,7 @@
 const URL = "http://localhost:8000/heroes";
 const formPostHero = document.getElementById("form-post-hero");
+const btnSearch = document.getElementById("btnSearch");
+const search = document.getElementById("search");
 
 // show all superheroes
 
@@ -42,6 +44,17 @@ function getAllHeroes() {
         .then((apiRes) => {
             const heroes = apiRes.data;
             displayAllHeroes(heroes);
+            document.getElementById("search").oninput = function (evt) {
+                const checkedRadio = document.querySelector("[name=filter]:checked");
+                var filterList;
+                if (checkedRadio.value === "name") {
+                    filterList = letterFilter(heroes, evt.target.value);
+                } else {
+                    filterList = publisherFilter(heroes, evt.target.value);
+                }
+                // const filterName = letterFilter(heroes, evt.target.value);
+                displayAllHeroes(filterList);
+            }
         })
         .catch((apiErr) => console.error(apiErr));
 }
@@ -68,6 +81,18 @@ async function deleteOneHero(id) {
 
 //DOM FUNCTIONS
 
+function letterFilter(heroes, search) {
+    return heroes.filter(function (hero) {
+        return hero.name.toLowerCase().match(search.toLowerCase());
+    })
+}
+
+function publisherFilter(heroes, search) {
+    return heroes.filter(function (hero) {
+        return hero.biography.publisher.toLowerCase().match(search.toLowerCase());
+    })
+}
+
 function removeHero(idHero) {
     const suppHero = document.querySelector(`[data-user-id="${idHero}"]`);
     suppHero.remove();
@@ -89,7 +114,6 @@ function displayOneHero(hero) {
          <li class="details">${hero.biography && hero.biography.publisher || hero.publisher}</li>
    </ul> `
     section.appendChild(div);
-
 }
 
 function displayAllHeroes(list) {
@@ -100,11 +124,12 @@ function displayAllHeroes(list) {
         li.classList.add("hero");
         li.setAttribute("data-hero-id", hero.id);
         li.innerHTML = `
-        <h3>${hero.name} </h3>
+        <h3>${hero.name}</h3>
+        <h4>${hero.biography && hero.biography.publisher || hero.publisher}</h4>
         <div class="buttons">
              <button class="btn remove">remove</button>
              <button class="btn details">details</button>
-            </div>`;
+        </div>`;
 
         const btnDetails = li.querySelector(".btn.details");
         const btnRemove = li.querySelector(".btn.remove");
@@ -116,6 +141,7 @@ function displayAllHeroes(list) {
         btnRemove.onclick = () => {
             deleteOneHero(hero.id)
         };
+
         ul.appendChild(li);
     })
 
@@ -124,4 +150,6 @@ function displayAllHeroes(list) {
 getAllHeroes();
 
 
+
 formPostHero.querySelector(".btn").onclick = postNewHero;
+
