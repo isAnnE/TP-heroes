@@ -1,0 +1,70 @@
+#modal-container {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(32, 32, 32);
+    background: radial-gradient(circle, rgba(32, 32, 32, 1) 31%, rgba(170, 170, 170, 1) 58%, rgba(255, 255, 0, 1) 85%);
+    background-size: 400% 400%;
+    animation: degrade 15s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal {
+    font-family: 'Oswald', sans-serif;
+    height: 100%;
+    width: 50%;
+    background: rgb(220, 220, 220, 0.5);
+    text-align: center;
+    color: black;
+    user-select: none;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+#modal-container:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility .5s;
+}
+
+#modal-container:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s, visibility .5s;
+}
+
+a.fermer {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+
+}
+
+a.fermer::after {
+    content: "X";
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+@keyframes degrade {
+
+    0%,
+    100% {
+        background-position: 0% 0%
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}

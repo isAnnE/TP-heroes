@@ -1,0 +1,29 @@
+#listAllHeroes {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+    font-family: 'Oswald', sans-serif;
+    ;
+}
+
+ul {
+    list-style: none;
+    padding: 5%;
+}
+
+
+
+li {
+    margin: 15px;
+    border: yellow solid 3px;
+    padding: 15%;
+}
+
+.detail {
+    padding: 1%
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

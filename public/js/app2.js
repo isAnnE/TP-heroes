@@ -6,7 +6,6 @@ const search = document.getElementById("search");
 // show all superheroes
 
 // API function
-
 async function postNewHero() {
     const name = document.getElementById("name").value;
     const aliases = document.getElementById("aliases").value;
@@ -25,7 +24,6 @@ async function postNewHero() {
             height,
             race,
             publisher,
-
         });
 
         getAllHeroes();
@@ -33,9 +31,7 @@ async function postNewHero() {
     } catch (err) {
         console.error(err);
     }
-
 }
-
 
 
 function getAllHeroes() {
@@ -65,6 +61,7 @@ function getOneHero(id) {
         .then((apiRes) => {
             const hero = apiRes.data;
             displayOneHero(hero);
+
         })
         .catch((apiErr) => console.error(apiErr));
 }
@@ -79,7 +76,14 @@ async function deleteOneHero(id) {
     }
 }
 
-//DOM FUNCTIONS
+
+//DOM function
+
+//remove hero
+function removeHero(idHero) {
+    const suppHero = document.querySelector(`[data-user-id="${idHero}"]`);
+    suppHero.remove();
+}
 
 function letterFilter(heroes, search) {
     return heroes.filter(function (hero) {
@@ -93,12 +97,8 @@ function publisherFilter(heroes, search) {
     })
 }
 
-function removeHero(idHero) {
-    const suppHero = document.querySelector(`[data-user-id="${idHero}"]`);
-    suppHero.remove();
-}
 
-
+//afficher un hero
 function displayOneHero(hero) {
     const section = document.getElementById("modal-container");
     section.innerHTML = "";
@@ -117,39 +117,38 @@ function displayOneHero(hero) {
     section.appendChild(div);
 }
 
+
+//afficher tout les hero
 function displayAllHeroes(list) {
     const ul = document.getElementById("listAllHeroes");
     ul.innerHTML = "";
     list.forEach((hero) => {
         const li = document.createElement("li");
         li.classList.add("hero");
-        li.setAttribute("data-hero-id", hero.id);
-        li.innerHTML = `
-        <h3>${hero.name}</h3>
+        li.setAttribute("data-user-id", hero.id);
+        li.innerHTML = `<h3> ${hero.name} </h3>
         <h4>${hero.biography && hero.biography.publisher || hero.publisher}</h4>
+      
         <div class="buttons">
-             <button class="btn remove">remove</button>
-            <button class="btn details"><a href="#modal-container" aria-label="open navigation">details</a></button>        
-        </div>`;
-        const btnDetails = li.querySelector(".btn.details");
+        <button class="btn remove">remove</button>
+        <button class="btn details"><a href="#modal-container" aria-label="open navigation">details</a></button>        
+        </div> `;
+
+        const btnDetail = li.querySelector(".btn.details")
         const btnRemove = li.querySelector(".btn.remove");
-
-        btnDetails.onclick = () => {
-            getOneHero(hero.id);
-        };
-
+        btnDetail.onclick = () => {
+            getOneHero(hero.id)
+        }
         btnRemove.onclick = () => {
-            deleteOneHero(hero.id)
+            deleteOneHero(hero.id);
         };
-
         ul.appendChild(li);
     })
 
 }
 
+
+
 getAllHeroes();
 
-
-
 formPostHero.querySelector(".btn").onclick = postNewHero;
-
