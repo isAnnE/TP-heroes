@@ -1,17 +1,8 @@
-@font-face {
-    font-family: "Badaboom";
-    src: local("badaboom_bb");
-   }
-
 header{padding: 20px;
-    /* background: url(../img/marvel-versus-dc-comics.png); */
     background: black;
     display: flex;
     flex-direction: column;
-    font-family: 'Oswald', sans-serif;;
-    /* font-family: @font-face {font-family: "Badaboom";
-        src: local("badaboom_bb");
-       }; */
+    font-family: 'Oswald', sans-serif;
 }
 
 h1{color: yellow;
