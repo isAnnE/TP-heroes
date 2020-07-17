@@ -30,7 +30,7 @@ header nav input#search {
 } */
 
 hr {
-    border: 2px solid yellow;
+    background:2px solid yellow;
     width: 100px;
     margin: 100px 30px 0px 0px
 }

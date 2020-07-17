@@ -41,14 +41,14 @@ function getAllHeroes() {
             const heroes = apiRes.data;
             displayAllHeroes(heroes);
             document.getElementById("search").oninput = function (evt) {
-                const checkedRadio = document.querySelector("[name=filter]:checked");
-                var filterList;
-                if (checkedRadio.value === "name") {
-                    filterList = letterFilter(heroes, evt.target.value);
-                } else {
-                    filterList = publisherFilter(heroes, evt.target.value);
-                }
-                // const filterName = letterFilter(heroes, evt.target.value);
+                // const checkedRadio = document.querySelector("[name=filter]:checked");
+                // var filterList;
+                // if (checkedRadio.value === "name") {
+                //     filterList = letterFilter(heroes, evt.target.value);
+                // } else {
+                //     filterList = publisherFilter(heroes, evt.target.value);
+                // }
+                const filterList = letterFilter(heroes, evt.target.value);
                 displayAllHeroes(filterList);
             }
         })
@@ -85,17 +85,18 @@ function removeHero(idHero) {
     suppHero.remove();
 }
 
+// filtrer par nom
 function letterFilter(heroes, search) {
     return heroes.filter(function (hero) {
         return hero.name.toLowerCase().match(search.toLowerCase());
     })
 }
 
-function publisherFilter(heroes, search) {
-    return heroes.filter(function (hero) {
-        return hero.biography.publisher.toLowerCase().match(search.toLowerCase());
-    })
-}
+// function publisherFilter(heroes, search) {
+//     return heroes.filter(function (hero) {
+//         return hero.biography.publisher.toLowerCase().match(search.toLowerCase());
+//     })
+// }
 
 
 //afficher un hero
