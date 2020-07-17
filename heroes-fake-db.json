@@ -35424,6 +35424,16 @@
       "race": "humain",
       "gender": "Female",
       "id": 744
+    },
+    {
+      "name": "yo",
+      "aliases": "yoyo",
+      "gender": "Female",
+      "weight": "-4",
+      "height": "3",
+      "race": "poodle",
+      "publisher": "disney",
+      "id": 745
     }
   ]
 }
